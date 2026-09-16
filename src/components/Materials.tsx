@@ -27,7 +27,7 @@ export function Materials() {
           id="materials-title"
           eyebrow="Resources"
           title="Tutorial Materials"
-          description={<p>Slides, lab instructions, code, workloads, and traces will be posted here as they become available.</p>}
+          description={<p>Slides, lab instructions, source code, workloads, and traces will be linked here when available.</p>}
         />
         <div className="materials-grid">
           {tutorial.materials.map((material) => <MaterialCard key={material.title} material={material} />)}

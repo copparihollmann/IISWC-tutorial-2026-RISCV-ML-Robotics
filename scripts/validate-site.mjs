@@ -16,6 +16,8 @@ const required = [
   "assets/og-card.png",
   "assets/uc-berkeley-seal.svg",
   "assets/slice-logo.png",
+  "fonts/overpass-latin.woff2",
+  "fonts/OFL.txt",
 ];
 
 const fail = (message) => failures.push(message);
@@ -169,6 +171,10 @@ if (!palette.includes("#003262") || !palette.includes("#fdb515")) {
 }
 for (const oldColor of ["#4ab7ff", "#3ee6dc", "#4ee0a1", "#a88dff", "#f2b84b"])
   if (palette.includes(oldColor)) fail(`Old accent color remains: ${oldColor}`);
+
+if (!css.includes("Overpass") || !html.includes("overpass-latin.woff2")) {
+  fail("The self-hosted Overpass font is not configured in the production site");
+}
 
 const bundleBytes = async (paths) => (await Promise.all(paths.map((path) => stat(path)))).reduce((sum, item) => sum + item.size, 0);
 const jsBytes = await bundleBytes(javascriptFiles);

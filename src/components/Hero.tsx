@@ -10,9 +10,10 @@ export function Hero() {
         <h1 id="hero-title">{tutorial.heroTitle}</h1>
         <p className="hero-subtitle">{tutorial.subtitle}</p>
         <p className="hero-description">
-          Learn how to take ML and robotic workloads from PyTorch to traced,
-          schedule-driven binaries running across heterogeneous RISC-V systems—from
-          instruction-set simulation to FPGA-accelerated simulation and real silicon.
+          This half-day tutorial covers an end-to-end workflow for compiling PyTorch
+          models, scheduling multi-rate robotic workloads, and tracing their execution
+          on heterogeneous RISC-V SoCs. The same workflow targets Spike, RTL simulation,
+          FireSim, and silicon.
         </p>
 
         <div className="event-metadata" aria-label="Tutorial details">
@@ -39,7 +40,7 @@ export function Hero() {
       </div>
 
       <a className="hero-scroll" href="#overview">
-        Explore the tutorial <ArrowIcon />
+        Tutorial overview <ArrowIcon />
       </a>
     </section>
   );

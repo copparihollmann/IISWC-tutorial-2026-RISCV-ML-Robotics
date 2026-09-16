@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Overpass";
+  font-style: normal;
+  font-weight: 400 900;
+  font-display: swap;
+  src: url("/fonts/overpass-latin.woff2") format("woff2");
+}
+
 :root {
   --blue: #003262;
   --blue-deep: #001f3f;
@@ -11,8 +19,8 @@
   --line-dark: rgba(0, 50, 98, 0.2);
   --max-width: 1200px;
   --gutter: clamp(1.1rem, 4vw, 2.5rem);
-  --sans: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  --sans: "Overpass", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --mono: "Overpass", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 *,
@@ -907,9 +915,8 @@ svg {
 .agenda-session li {
   display: grid;
   padding: 1.4rem 1.5rem;
-  grid-template-columns: 90px minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr);
   align-items: start;
-  gap: 1.5rem;
   border-bottom: 1px solid var(--line);
   counter-increment: agenda;
 }
@@ -920,18 +927,6 @@ svg {
 
 .agenda-session li::before {
   display: none;
-}
-
-.agenda-time {
-  width: fit-content;
-  padding: 0.3rem 0.45rem;
-  color: var(--blue);
-  background: var(--gold);
-  font-family: var(--mono);
-  font-size: 0.56rem;
-  font-weight: 800;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
 }
 
 .agenda-session li h4 {

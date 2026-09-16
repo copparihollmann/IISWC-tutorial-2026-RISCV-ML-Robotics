@@ -33,8 +33,8 @@ export function Audience() {
         <SectionHeading
           id="audience-title"
           eyebrow="Audience"
-          title="Who Is This For?"
-          description={<p>The tutorial is approachable without requiring expertise in every layer of the stack.</p>}
+          title="Intended Audience"
+          description={<p>Expertise in every component of the software and hardware stack is not required.</p>}
         />
 
         <div className="audience-chips" aria-label="Intended audiences">
@@ -44,12 +44,12 @@ export function Audience() {
         <div className="prerequisite-grid">
           <article>
             <p className="eyebrow">Recommended</p>
-            <h3>Useful foundations</h3>
+            <h3>Background</h3>
             <ul>{recommended.map((item) => <li key={item}>{item}</li>)}</ul>
           </article>
           <article>
             <p className="eyebrow">Helpful, not required</p>
-            <h3>Prior experience</h3>
+            <h3>Additional experience</h3>
             <ul>{optional.map((item) => <li key={item}>{item}</li>)}</ul>
           </article>
         </div>

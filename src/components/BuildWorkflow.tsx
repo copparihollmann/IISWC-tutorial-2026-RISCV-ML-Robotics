@@ -8,9 +8,9 @@ export function BuildWorkflow() {
       <div className="container">
         <SectionHeading
           id="build-title"
-          eyebrow="What you'll build"
-          title="Follow a workload through the complete system"
-          description={<p>This is a working sequence of artifacts and measurements, rather than a series of disconnected lectures.</p>}
+          eyebrow="Hands-on workflow"
+          title="Model compilation, execution, and analysis"
+          description={<p>The two labs use a common workload and produce executable artifacts, schedules, and traces.</p>}
           inverse
         />
 
@@ -29,8 +29,8 @@ export function BuildWorkflow() {
 
         <p className="build-outcome">
           <span>Outcome</span>
-          By the end of the tutorial, participants will have followed a robotic ML workload
-          from PyTorch to a traced, schedule-driven execution on a heterogeneous RISC-V platform.
+          Participants will take a robotic ML workload from PyTorch to traced,
+          schedule-driven execution on a heterogeneous RISC-V platform.
         </p>
       </div>
     </section>

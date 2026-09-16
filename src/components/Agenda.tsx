@@ -9,7 +9,7 @@ export function Agenda() {
           id="agenda-title"
           eyebrow="Sunday afternoon"
           title="Tutorial Agenda"
-          description={<p>Two sessions beginning at {tutorial.event.time}, separated by a coffee break.</p>}
+          description={<p>The tutorial begins at {tutorial.event.time} and consists of two sessions separated by a coffee break.</p>}
         />
 
         <div className="agenda-list">
@@ -20,13 +20,12 @@ export function Agenda() {
                   <span>{String(sessionIndex + 1).padStart(2, "0")}</span>
                   <div>
                     <h3>{session.label}</h3>
-                    <small>Detailed timing TBD</small>
+                    <small>Segment times TBD</small>
                   </div>
                 </header>
                 <ol>
                   {session.items.map((item) => (
                     <li className={item.handsOn ? "agenda-item--lab" : undefined} key={item.title}>
-                      <span className="agenda-time">Time TBD</span>
                       <div>
                         {item.handsOn ? <small>Hands-on</small> : null}
                         <h4>{item.title}</h4>
@@ -46,7 +45,7 @@ export function Agenda() {
           ))}
         </div>
 
-        <p className="timing-note"><span>Schedule note</span> Detailed timing coming soon.</p>
+        <p className="timing-note"><span>Timing</span> Detailed segment times will be posted when finalized.</p>
       </div>
     </section>
   );

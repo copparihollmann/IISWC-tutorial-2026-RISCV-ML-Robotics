@@ -2,12 +2,12 @@
   <rect width="1200" height="630" fill="#003262"/>
   <rect width="1200" height="56" fill="#FDB515"/>
   <g transform="translate(78 96)">
-    <text x="0" y="34" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">UC BERKELEY · SLICE · IISWC 2026 · HALF-DAY TUTORIAL</text>
+    <text x="0" y="34" fill="#FFFFFF" font-family="Overpass, Arial, Helvetica, sans-serif" font-size="24" font-weight="700">UC BERKELEY · SLICE · IISWC 2026 · HALF-DAY TUTORIAL</text>
   </g>
-  <text x="78" y="260" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="70" font-weight="700">Building, Tracing,</text>
-  <text x="78" y="340" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="70" font-weight="700">and Optimizing</text>
+  <text x="78" y="260" fill="#FFFFFF" font-family="Overpass, Arial, Helvetica, sans-serif" font-size="70" font-weight="700">Building, Tracing,</text>
+  <text x="78" y="340" fill="#FFFFFF" font-family="Overpass, Arial, Helvetica, sans-serif" font-size="70" font-weight="700">and Optimizing</text>
   <rect x="78" y="382" width="170" height="8" fill="#FDB515"/>
-  <text x="78" y="448" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="28">End-to-End ML and Robotic Workloads on</text>
-  <text x="78" y="492" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="28">Heterogeneous RISC-V SoCs</text>
-  <text x="78" y="560" fill="#FDB515" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">COMPILATION · SCHEDULING · EXECUTION · TRACING · OPTIMIZATION</text>
+  <text x="78" y="448" fill="#FFFFFF" font-family="Overpass, Arial, Helvetica, sans-serif" font-size="28">End-to-End ML and Robotic Workloads on</text>
+  <text x="78" y="492" fill="#FFFFFF" font-family="Overpass, Arial, Helvetica, sans-serif" font-size="28">Heterogeneous RISC-V SoCs</text>
+  <text x="78" y="560" fill="#FDB515" font-family="Overpass, Arial, Helvetica, sans-serif" font-size="20" font-weight="700">COMPILATION · SCHEDULING · EXECUTION · TRACING · OPTIMIZATION</text>
 </svg>

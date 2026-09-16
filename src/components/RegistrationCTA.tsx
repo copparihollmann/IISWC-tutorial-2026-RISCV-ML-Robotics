@@ -7,7 +7,7 @@ export function RegistrationCTA() {
       <div className="container">
         <header className="registration-heading">
           <p className="eyebrow">Registration</p>
-          <h2 id="registration-title">Join Us at IISWC 2026</h2>
+          <h2 id="registration-title">Registration and Tutorial RSVP</h2>
           <p>{tutorial.event.shortDate} · {tutorial.event.shortLocation}</p>
         </header>
 
@@ -21,9 +21,9 @@ export function RegistrationCTA() {
             </a>
           </article>
           <article className="registration-options__rsvp">
-            <small>Join the hands-on tutorial</small>
-            <h3>Reserve a Tutorial Spot + Cloud VM</h3>
-            <p>Tell the organizers you plan to participate and whether you need a pre-provisioned VM.</p>
+            <small>Hands-on tutorial</small>
+            <h3>Tutorial RSVP and Cloud VM Request</h3>
+            <p>Use the tutorial RSVP to indicate whether you need a pre-provisioned VM.</p>
             <a className="button button--primary" href={tutorial.urls.tutorialRsvp} target="_blank" rel="noreferrer">
               Tutorial RSVP <ExternalIcon />
             </a>
@@ -36,8 +36,8 @@ export function RegistrationCTA() {
           <header className="registration-form__heading">
             <div>
               <p className="eyebrow">Tutorial RSVP + Cloud VM Reservation</p>
-              <h3>Reserve your hands-on spot</h3>
-              <p>Complete the form below, or open it in a separate tab if the embedded form does not load.</p>
+              <h3>Tutorial RSVP and VM request</h3>
+              <p>Complete the form below. A separate link is provided if the embedded form does not load.</p>
             </div>
             <a href={tutorial.urls.tutorialRsvp} target="_blank" rel="noreferrer">
               Open form in a new tab <ExternalIcon />
