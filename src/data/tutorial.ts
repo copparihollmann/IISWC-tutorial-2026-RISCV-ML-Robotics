@@ -36,9 +36,9 @@ const organizers: Organizer[] = [
   { name: "Dima Nikiforov", email: null },
   { name: "Shengjun Kris Dong", email: null },
   { name: "Agustin Coppari Hollmann", email: null },
+  { name: "Chengyi Lux Zhang", email: "iansseijelly@berkeley.edu" },
   { name: "Loren Hung", email: null },
   { name: "Ailsa Sun", email: null },
-  { name: "Chengyi Lux Zhang", email: "iansseijelly@berkeley.edu" },
   { name: "Yakun Sophia Shao", email: null },
 ].map(({ name, email }) => ({
   name,

@@ -37,23 +37,21 @@ export function Navbar() {
     <header className="site-header">
       <div className="container nav-shell">
         <a className="site-brand" href="#top" onClick={() => setIsOpen(false)}>
-          <span className="site-brand__mark" aria-hidden="true">T</span>
-          <span>
+          <span className="site-brand__logos" aria-hidden="true">
+            {tutorial.organizationLogos.map((logo) => (
+              <img
+                className={`site-brand__logo site-brand__logo--${logo.kind}`}
+                src={`${import.meta.env.BASE_URL}${logo.asset}`}
+                alt=""
+                key={logo.name}
+              />
+            ))}
+          </span>
+          <span className="site-brand__label">
             <strong>{tutorial.conferenceShort}</strong>
             <small>Hands-on Tutorial</small>
           </span>
         </a>
-
-        <div className="nav-affiliations" aria-hidden="true">
-          {tutorial.organizationLogos.map((logo) => (
-            <img
-              className={`nav-affiliations__${logo.kind}`}
-              src={`${import.meta.env.BASE_URL}${logo.asset}`}
-              alt=""
-              key={logo.name}
-            />
-          ))}
-        </div>
 
         <button
           className="menu-toggle"

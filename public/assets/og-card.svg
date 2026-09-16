@@ -2,9 +2,7 @@
   <rect width="1200" height="630" fill="#003262"/>
   <rect width="1200" height="56" fill="#FDB515"/>
   <g transform="translate(78 96)">
-    <rect width="54" height="54" fill="#FDB515"/>
-    <text x="27" y="39" fill="#003262" font-family="Georgia, serif" font-size="34" font-weight="700" text-anchor="middle">T</text>
-    <text x="74" y="34" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">IISWC 2026 · HALF-DAY TUTORIAL</text>
+    <text x="0" y="34" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">UC BERKELEY · SLICE · IISWC 2026 · HALF-DAY TUTORIAL</text>
   </g>
   <text x="78" y="260" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="70" font-weight="700">Building, Tracing,</text>
   <text x="78" y="340" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="70" font-weight="700">and Optimizing</text>

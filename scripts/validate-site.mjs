@@ -12,7 +12,6 @@ const required = [
   "robots.txt",
   "sitemap.xml",
   ".nojekyll",
-  "assets/favicon.svg",
   "assets/apple-touch-icon.png",
   "assets/og-card.png",
   "assets/uc-berkeley-seal.svg",
@@ -44,7 +43,7 @@ const [html, notFound, manifestText, sitemap, favicon, data] = await Promise.all
   load(root, "404.html"),
   load(root, "manifest.webmanifest"),
   load(root, "sitemap.xml"),
-  load(root, "assets/favicon.svg"),
+  load(root, "assets/uc-berkeley-seal.svg"),
   readFile(dataPath, "utf8"),
 ]);
 
