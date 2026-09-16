@@ -1,0 +1,27 @@
+{
+  "name": "iiswc-2026-riscv-tutorial",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "check": "tsc -b --pretty false",
+    "validate:html": "html-validate --config .htmlvalidate.json dist/index.html dist/404.html",
+    "validate:site": "node scripts/validate-site.mjs",
+    "verify": "npm run build && npm run validate:html && npm run validate:site"
+  },
+  "dependencies": {
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.1.1",
+    "html-validate": "9.7.1",
+    "typescript": "7.0.2",
+    "vite": "8.3.0"
+  }
+}

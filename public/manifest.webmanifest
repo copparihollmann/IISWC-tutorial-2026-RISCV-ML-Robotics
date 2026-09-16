@@ -1,0 +1,24 @@
+{
+  "name": "IISWC 2026 Heterogeneous RISC-V ML & Robotics Tutorial",
+  "short_name": "IISWC Tutorial",
+  "description": "Hands-on tutorial on compiling, scheduling, tracing, and optimizing ML and robotic workloads on heterogeneous RISC-V SoCs.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f7f6f2",
+  "theme_color": "#003262",
+  "icons": [
+    {
+      "src": "./assets/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
