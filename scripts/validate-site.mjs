@@ -141,7 +141,9 @@ const exactData = [
 ];
 for (const value of exactData) if (!data.includes(value)) fail(`Configured tutorial data is missing: ${value}`);
 if (/REPLACE_WITH_GOOGLE_FORM_URL|href=["']#["']/.test(sourceText)) fail("A placeholder URL remains in source");
-if (!/materials:[\s\S]*url:\s*null/.test(data)) fail("Coming-soon materials must remain non-clickable");
+if (!data.includes("Slides, open-source repositories, and a tutorial guide will be provided after the tutorial.")) {
+  fail("Tutorial materials notice has drifted");
+}
 
 const visibleContent = [
   "Sunday, September 27, 2026",
@@ -151,6 +153,11 @@ const visibleContent = [
   "Reserve Your Hands-on Spot",
   "IISWC Registration",
   "The tutorial RSVP does not replace IISWC conference registration.",
+  "Building Embedded Models with ModelBlaster",
+  "Tracing with TACIT",
+  "XPU-RT: Expert Scheduling on Heterogeneous Hardware",
+  "RiskyBird Demo",
+  "Slides, open-source repositories, and a tutorial guide will be provided after the tutorial.",
   ...exactData.slice(6),
 ];
 for (const value of visibleContent) if (!builtText.includes(value)) fail(`Built site is missing visible content: ${value}`);
@@ -162,6 +169,8 @@ const removedSections = [
   "The Tutorial Stack",
   "Hands-on Without the Toolchain Setup",
   "What You'll Learn",
+  "Intended Audience",
+  "Computer architecture researchers",
 ];
 for (const value of removedSections) if (builtText.includes(value)) fail(`Removed section returned: ${value}`);
 

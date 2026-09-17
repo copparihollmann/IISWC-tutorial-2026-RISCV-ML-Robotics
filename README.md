@@ -118,15 +118,14 @@ configured filenames, or update the corresponding data records.
 
 ## Add tutorial materials
 
-Edit the `materials` array in `src/data/tutorial.ts`. Set a card's `url` to its
-real destination. Records with `url: null` render as non-clickable “Coming
-soon” cards.
+Edit `materialsNote` in `src/data/tutorial.ts`. Add resource links to the
+materials section when the slides, repositories, and guide are available.
 
 ## Change the agenda
 
 Edit the `agenda` array in `src/data/tutorial.ts`. Each session contains a list
-of items with a title, description, and optional `handsOn: true` label. Avoid
-adding exact subsection times until they are confirmed by the organizers.
+of items with a title and description. Avoid adding exact subsection times
+until they are confirmed by the organizers.
 
 ## Main component structure
 
@@ -139,7 +138,6 @@ src/
 │   ├── Overview.tsx
 │   ├── BuildWorkflow.tsx
 │   ├── Agenda.tsx
-│   ├── Audience.tsx
 │   ├── Organizers.tsx
 │   ├── RegistrationCTA.tsx
 │   ├── Materials.tsx

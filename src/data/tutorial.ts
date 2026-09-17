@@ -15,16 +15,9 @@ export interface Organizer {
   email: string | null;
 }
 
-export interface Material {
-  title: string;
-  description: string;
-  url: string | null;
-}
-
 export interface AgendaItem {
   title: string;
   description: string;
-  handsOn?: boolean;
 }
 
 export interface AgendaSession {
@@ -118,31 +111,24 @@ export const tutorial = {
     {
       label: "Session I",
       items: [
-        { title: "Welcome and System Overview", description: "Motivation for lightweight heterogeneous ML runtimes and an overview of the tutorial stack." },
-        { title: "From PyTorch to Zephyr", description: "Ahead-of-time compilation, quantization, memory planning, target-specific kernels, and ELF generation." },
-        { title: "Hands-on Lab I", description: "Run a compiled workload, validate its output, and inspect its execution on simulated RISC-V hardware.", handsOn: true },
-        { title: "Runtime Architecture and Tracing", description: "Persistent workers, hart affinity, accelerator dispatch, synchronization, and per-dispatch tracing." },
+        { title: "Introduction", description: "Tutorial scope and overview." },
+        { title: "Toolchain Setup", description: "Zephyr, embedded software, and FPGA setup." },
+        { title: "Building Embedded Models with ModelBlaster", description: "Model compilation and deployment for embedded targets." },
+        { title: "Tracing with TACIT", description: "Runtime trace collection and analysis." },
       ],
     },
     {
       label: "Session II",
       items: [
-        { title: "From Single Models to Robotic Workloads", description: "Perception, planning, control, VLA-style tasks, multi-rate execution, and their temporal constraints." },
-        { title: "Ahead-of-Time Heterogeneous Scheduling", description: "Assign model operations to hardware backends and deploy a schedule to the runtime." },
-        { title: "Hands-on Lab II", description: "Execute and compare schedules using provided workloads and trace data.", handsOn: true },
-        { title: "Trace-Guided Optimization", description: "Use traces to guide kernel optimization, placement, autotuning, and agentic optimization." },
-        { title: "Pre-Silicon to Silicon", description: "Spike, RTL simulation, FireSim, and commercial or custom RISC-V platforms." },
-        { title: "Discussion and Q&A", description: "Future directions for lightweight ML runtimes and heterogeneous embedded systems." },
+        { title: "ModelBlaster: Kernel Optimization", description: "Kernel optimization using measured execution behavior." },
+        { title: "XPU-RT: Expert Scheduling on Heterogeneous Hardware", description: "Scheduling and placement across heterogeneous compute resources." },
+        { title: "Hardware-in-the-Loop Demo with XPU-RT", description: "Hardware-in-the-loop execution with XPU-RT." },
+        { title: "RiskyBird Demo", description: "RiskyBird demonstration." },
       ],
     },
   ] satisfies AgendaSession[],
-  materials: [
-    { title: "Slides", description: "Presentation deck", url: null },
-    { title: "Hands-on Guide", description: "Lab instructions", url: null },
-    { title: "Source Code", description: "Tutorial repositories", url: null },
-    { title: "Example Workloads", description: "ML and robotics examples", url: null },
-    { title: "Trace Dataset", description: "Cached SoC traces", url: null },
-  ] satisfies Material[],
+  materialsNote:
+    "Slides, open-source repositories, and a tutorial guide will be provided after the tutorial.",
   faq: [
     { question: "Do I need to register for IISWC?", answer: "Yes. The tutorial is part of the IISWC workshop and tutorial program. The tutorial RSVP is used separately for hands-on planning and cloud VM allocation." },
     { question: "Do I need to install anything beforehand?", answer: "No specialized RISC-V, Zephyr, FPGA, or GPU software needs to be installed locally. Hands-on exercises will use pre-provisioned cloud environments." },

@@ -25,9 +25,8 @@ export function Agenda() {
                 </header>
                 <ol>
                   {session.items.map((item) => (
-                    <li className={item.handsOn ? "agenda-item--lab" : undefined} key={item.title}>
+                    <li key={item.title}>
                       <div>
-                        {item.handsOn ? <small>Hands-on</small> : null}
                         <h4>{item.title}</h4>
                         <p>{item.description}</p>
                       </div>

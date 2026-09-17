@@ -1,5 +1,4 @@
 import { Agenda } from "./components/Agenda";
-import { Audience } from "./components/Audience";
 import { BuildWorkflow } from "./components/BuildWorkflow";
 import { FAQ } from "./components/FAQ";
 import { Footer } from "./components/Footer";
@@ -20,7 +19,6 @@ export default function App() {
         <Overview />
         <BuildWorkflow />
         <Agenda />
-        <Audience />
         <Organizers />
         <RegistrationCTA />
         <Materials />
